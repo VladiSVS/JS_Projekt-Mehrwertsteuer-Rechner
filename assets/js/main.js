@@ -3,7 +3,7 @@ function mehrWertSteuerNetto(nettobBetrag, satz) {
     let steuerResult = nettobBetrag / 100 * satz
     steuerResult = Math.floor(steuerResult * 100) / 100
     document.getElementById("steuerResult").innerHTML = steuerResult + " €"
-    document.getElementById("bruttoResult").innerHTML = Number(steuerResult + nettobBetrag) + " €"
+    document.getElementById("bruttoResult").innerHTML = Number(nettobBetrag + steuerResult) + " €"
 }
 
 function mehrWertSteuerBrutto(nettobBetrag, satz) {
