@@ -13,7 +13,7 @@
     <form action="">
         <label for="">Was soll berechnet werden?</label>
         <div>
-            <input name="radio1" type="radio" id="netto" onchange="berechnen()">
+            <input name="radio1" type="radio" id="netto" checked="checked" onchange="berechnen()">
             <label for="radio">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
         </div>
         <div>
@@ -22,14 +22,14 @@
         </div>
         <label for="">Mehrwertsteuersatz</label>
         <div>
-            <input name="2" type="radio" id="percentHigh" onchange="berechnen()">
+            <input name="2" type="radio" id="percentHigh" checked="checked" onchange="berechnen()">
             <label for="radio3">19 %</label>
             <input name="2" type="radio" id="percentLow" onchange="berechnen()">
             <label for="radio4">7 %</label>
         </div>
         <label for="" id="nettoBruttoText">Nettobetrag (Preis ohne Mehrwertsteuer) in Euro</label>
         <div>
-            <input type="number" id="betrag">
+            <input type="number" id="betrag" placeholder="0,00">
         </div>
         <input type="button" value="BERECHNEN" onclick="berechnen()">
         <div>
