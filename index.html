@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <form action="">
+        <label for="">Was soll berechnet werden?</label>
+        <div>
+            <input name="radio1" type="radio" id="netto" onchange="berechnen()">
+            <label for="radio">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+        </div>
+        <div>
+            <input name="radio1" type="radio" id="brutto" onchange="berechnen()">
+            <label for="radio2">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
+        </div>
+        <label for="">Mehrwertsteuersatz</label>
+        <div>
+            <input name="2" type="radio" id="percentHigh" onchange="berechnen()">
+            <label for="radio3">19 %</label>
+            <input name="2" type="radio" id="percentLow" onchange="berechnen()">
+            <label for="radio4">7 %</label>
+        </div>
+        <label for="" id="nettoBruttoText">Nettobetrag (Preis ohne Mehrwertsteuer) in Euro</label>
+        <div>
+            <input type="number" id="betrag">
+        </div>
+        <input type="button" value="BERECHNEN" onclick="berechnen()">
+        <div>
+            <label for="">Ergebnis</label>
+            <div>
+                <label for="">Mehrwertsteuerbetrag</label>
+                <span id="steuerResult"></span>
+            </div>
+            <div>
+                <label for="">Bruttobetrag (Endpreis)</label>
+                <span id="bruttoResult"></span>
+            </div>
+        </div>
+    </form>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

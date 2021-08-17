@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 350px;
+    padding: 40px;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+}
+
+form > label {
+    margin: 1em 0;
+}
+
+form > input {
+    margin-bottom: 5%;
+}
+
+form > div:last-of-type > div {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0;
+}
+
+form > div:last-of-type > div > label {
+    margin: 2% 0;
+}
+
+#betrag {
+    margin-bottom: 2%;
+}
