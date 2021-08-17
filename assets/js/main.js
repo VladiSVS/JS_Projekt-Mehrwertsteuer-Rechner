@@ -13,7 +13,7 @@ function mehrWertSteuerBrutto(nettobBetrag, satz) {
     document.getElementById("bruttoResult").innerHTML = Number(nettobBetrag - steuerResult) + " €"
 }
 
-function berechnen() {
+function steuerRechner() {
     let betrag = Number(document.getElementById("betrag").value)
     let percentHigh = 19
     let percentLow = 7
