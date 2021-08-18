@@ -19,6 +19,7 @@ function steuerRechner() {
     let percentLow = 7
     if (document.getElementById("netto").checked) {
         document.getElementById("nettoBruttoText").innerHTML = "Nettobetrag (Preis ohne Mehrwertsteuer) in Euro"
+        document.getElementById("endNettoBruttoText").innerHTML = "Bruttobetrag (Endpreis)"
         if (document.getElementById("percentHigh").checked) {
             mehrWertSteuerNetto(betrag, percentHigh)
         } else {
@@ -26,6 +27,7 @@ function steuerRechner() {
         }
     } else {
         document.getElementById("nettoBruttoText").innerHTML = "Bruttobetrag (Preis inklusive Mehrwertsteuer) in Euro"
+        document.getElementById("endNettoBruttoText").innerHTML = "Nettobetrag (Endpreis)"
         if (document.getElementById("percentHigh").checked) {
             mehrWertSteuerBrutto(betrag, percentHigh)
         } else {
